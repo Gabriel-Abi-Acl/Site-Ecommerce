@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkVision</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<!--Entao Susu eu usei de base um site que eu fiz pra uma empresa no trabalho. Eu usei algumas coisinhas de JS so pra deixar mais bonitinho e funcional mas usei so o basico mesmo.-->
+<body class="corpo">
+    <header class="cabecalho">
+        <div class="conteiner conteudo-cabecalho">
+            <div class="logo">MarkVision</div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="quemsomos.html">Quem Somos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="recursos.html">Recursos</a></li>
+                    <li><a href="demonstracao.html">Demonstração</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="botao-login" title="Login">
+                <i class="fas fa-user-circle"></i>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="destaque">
+            <div class="conteiner">
+                <h1>Análise de Marketing Inteligente</h1>
+                <p>Transforme seus dados em decisões estratégicas com nossa plataforma de análise de marketing.</p>
+                <a href="#recursos" class="botao-principal">Conheça nossos serviços</a>
+            </div>
+        </section>
+        
+        <section id="recursos" class="recursos">
+            <div class="conteiner">
+                <h2 class="titulo-secao">Nossos Recursos</h2>
+                <div class="grade-recursos">
+                    <div class="cartao-recurso">
+                        <div class="icone-recurso">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Relatórios Detalhados</h3>
+                        <p>Acesso a relatórios completos sobre o desempenho das suas campanhas.</p>
+                    </div>
+                    
+                    <div class="cartao-recurso">
+                        <div class="icone-recurso">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3>Gráficos Interativos</h3>
+                        <p>Visualize seus dados com gráficos personalizados e fáceis de entender.</p>
+                    </div>
+                    
+                    <div class="cartao-recurso">
+                        <div class="icone-recurso">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <h3>Materiais Prontos</h3>
+                        <p>Modelos prontos para suas campanhas publicitárias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="demonstracao">
+            <div class="conteiner">
+                <h2 class="titulo-secao">Veja como funciona</h2>
+                <div class="conteudo-demo">
+                    <div class="texto-demo">
+                        <h3>Dashboard Intuitivo</h3>
+                        <p>Nosso painel de controle centraliza todas as métricas importantes em um só lugar.</p>
+                        <p>Monitore em tempo real o desempenho das suas campanhas e tome decisões baseadas em dados.</p>
+                    </div>
+                    <div class="imagem-demo">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/070773af-eca7-45a4-8f5d-bb2bc8ba17f9.png" alt="Dashboard mostrando diversos gráficos de análise de marketing com cores modernas, indicadores de desempenho e métricas chave">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="conteiner">
+            <p>© 2023 MarkVision. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.botao-login').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

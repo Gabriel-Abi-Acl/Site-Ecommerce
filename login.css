@@ -1,0 +1,272 @@
+:root {
+    --cor-primaria: #809671;
+    --cor-secundaria: #B3B792;
+    --cor-clara: #E5E0D8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.corpo {
+    background-color: var(--cor-clara);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cabecalho {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+.conteudo-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+.botao-voltar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--cor-primaria);
+    transition: transform 0.3s;
+}
+.botao-voltar:hover {
+    transform: scale(1.1);
+}
+.cartao-login {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.lateral-imagem {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-secundaria) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    min-height: 300px;
+}
+
+.lateral-imagem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.conteudo-login {
+    padding: 40px 30px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo h1 {
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.campo-formulario {
+    margin-bottom: 20px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.grupo-input {
+    position: relative;
+}
+
+.grupo-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--cor-primaria);
+    font-size: 1.1rem;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 0.85rem;
+}
+
+.lembrar-senha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lembrar-senha input {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--cor-primaria);
+}
+
+.esqueci-senha {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botao-login {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registrar {
+    text-align: center;
+    margin-top: 25px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.registrar a {
+    color: var(--cor-primaria);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (min-width: 550px) and (max-width: 1100px) {
+    .cartao-login {
+        max-width: 600px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    
+    .lateral-imagem {
+        min-height: 400px;
+    }
+    
+    .conteudo-login {
+        padding: 50px 40px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .botao-login {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
+@media (min-width: 1100px) {
+    .cartao-login {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+    }
+    
+    .lateral-imagem {
+        padding: 60px;
+        min-height: 500px;
+    }
+    
+    .conteudo-login {
+        padding: 70px 60px;
+    }
+    
+    .logo h1 {
+        font-size: 2.5rem;
+    }
+    
+    .logo p {
+        font-size: 1.2rem;
+    }
+    
+    .campo-formulario input {
+        padding: 15px 15px 15px 50px;
+        font-size: 1.1rem;
+    }
+    
+    .botao-login {
+        padding: 16px;
+        font-size: 1.2rem;
+    }
+    
+    .registrar {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 549px) {
+    .corpo {
+        padding: 15px;
+        align-items: flex-start;
+    }
+    
+    .lateral-imagem {
+        min-height: 200px;
+        padding: 30px;
+    }
+    
+    .conteudo-login {
+        padding: 30px 20px;
+    }
+    
+    .opcoes-login {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
