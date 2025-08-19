@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkVision</title>
+    <link rel="stylesheet" href="planos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">MarkVision</div>
+            <button class="btn-voltar" title="Voltar">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="titulo">Nossos Planos</h1>
+                <p class="subtitulo">Escolha o melhor para seu negócio</p>
+            </div>
+        </section>
+        
+        <section class="planos-container">
+            <div class="container">
+                <div class="planos-grid">
+                    <div class="plano">
+                        <h3 class="plano-titulo">Básico</h3>
+                        <div class="plano-preco">R$99<span class="plano-periodo">/mês</span></div>
+                        
+                        <div class="plano-recursos">
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>5 relatórios mensais</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>3 gráficos por relatório</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte por e-mail</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-times"></i>
+                                <span>Dashboard personalizado</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-plano">Assinar</button>
+                    </div>
+                    
+                    <div class="plano destaque">
+                        <h3 class="plano-titulo">Profissional</h3>
+                        <div class="plano-preco">R$199<span class="plano-periodo">/mês</span></div>
+                        
+                        <div class="plano-recursos">
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>15 relatórios mensais</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>10 gráficos por relatório</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte prioritário</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Dashboard personalizado</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-plano">Assinar</button>
+                    </div>
+                    
+                    <div class="plano">
+                        <h3 class="plano-titulo">Premium</h3>
+                        <div class="plano-preco">R$399<span class="plano-periodo">/mês</span></div>
+                        
+                        <div class="plano-recursos">
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Relatórios ilimitados</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Gráficos ilimitados</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Suporte 24/7</span>
+                            </div>
+                            <div class="recurso">
+                                <i class="fas fa-check"></i>
+                                <span>Dashboard personalizado</span>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-plano">Assinar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 MarkVision. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+ 
+        document.querySelector('.btn-voltar').addEventListener('click', function() {
+            window.history.back();
+        });
+
+        document.querySelectorAll('.btn-plano').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const plano = this.closest('.plano').querySelector('.plano-titulo').textContent;
+                alert('Você selecionou o plano ' + plano);
+            });
+        });
+    </script>
+</body>
+</html>
